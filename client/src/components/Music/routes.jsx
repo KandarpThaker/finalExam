@@ -14,7 +14,7 @@ const Routes = () => {
       <Route exact path="/" component={Index}/>
       <Route exact path="/edit/:id" component={Edit}/>
       <Route exact path="/new" component={New}/>
-      <Route exact path="/destroy" component={Destroy}/>
+      <Route exact path="/destroy/:id" component={Destroy}/>
       <Route exact path="/form" component={Form}/>
     </Switch>
   );

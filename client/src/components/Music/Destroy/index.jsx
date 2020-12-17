@@ -10,7 +10,7 @@ const Destroy = () => {
   const { setNotification } = useContext(NotificationContext);
 
   useEffect(() => {
-    Axios.post(`${globalStore.REACT_APP_ENDPOINT}/music/destroy`, { _id: id })
+    Axios.post(`${globalStore.REACT_APP_ENDPOINT}/musics/destroy`, { _id: id })
     .then(() => {
       setNotification(`Music was destroyed successfully.`);
     })
@@ -19,7 +19,7 @@ const Destroy = () => {
     });
   }, []);
 
-  return <Redirect to="/"/>;
+  return <Redirect to="/musics"/>;
 }
  
 export default Destroy;

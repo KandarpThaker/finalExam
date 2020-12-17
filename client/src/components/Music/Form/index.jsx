@@ -34,7 +34,7 @@ const MusicForm = ({ endpoint, preload }) => {
       if (data) {
         setNotification({
           type: "success",
-          message: "Game was Added successfully"
+          message: "Music was Added successfully"
         });
       }
 

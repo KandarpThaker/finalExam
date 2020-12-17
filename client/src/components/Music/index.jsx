@@ -49,7 +49,7 @@ const Music = () => {
                   </td>
                   
                   <td>
-                    {mus.author}
+                    {mus.artist}
                   </td>
 
                   <td>

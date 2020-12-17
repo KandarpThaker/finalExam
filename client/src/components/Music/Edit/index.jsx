@@ -14,7 +14,7 @@ const Edit = () => {
   const { setNotification } = useContext(NotificationContext);
 
   useEffect(() => {
-    Axios.get(`${globalStore.REACT_APP_ENDPOINT}/music/${id}`)
+    Axios.get(`${globalStore.REACT_APP_ENDPOINT}/musics/${id}`)
     .then(({ data }) => {
       setPreload(data);
     })
@@ -33,7 +33,7 @@ const Edit = () => {
       </Header>
 
       <Container>
-        <Form endpoint="music/update" preload={preload}/>
+        <Form endpoint="musics/update" preload={preload}/>
       </Container>
     </>
   );
